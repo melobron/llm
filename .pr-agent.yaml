@@ -1,0 +1,44 @@
+auto_request_review: true
+
+# Configure which files and directories to include/exclude
+includes:
+  - "**/*.py"
+  - ".github/workflows/*.yml"
+  - ".gitignore"
+  - ".pr-agent.yaml"
+  - "pre-commit-config.yaml"
+  - "makefile"
+  - "README.md"
+  - "requirements.txt"
+
+# Exclude specific directories or files
+excludes:
+  - "notebooks/**"
+
+# Review settings
+review:
+  language: en  # Language for review comments
+  enable_review_comment_suggestions: true  # Enable code suggestions in review comments
+  review_comment_threshold: 0.6  # Confidence threshold for making review comments
+
+# PR Description settings
+pr_description:
+  enable: true  # Enable automatic PR description generation
+  template: |
+    ## Changes
+    {changes}
+
+    ## Context
+    {context}
+
+    ## Tests
+    {tests}
+
+    ## Potential Risks
+    {risks}
+
+# Additional features
+features:
+  enable_code_suggestions: true  # Enable inline code suggestions
+  enable_similar_issues: true   # Enable finding similar issues
+  enable_pr_summary: true      # Enable PR summary generation
