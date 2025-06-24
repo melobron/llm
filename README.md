@@ -102,4 +102,4 @@ pre-commit install
   - 기타 파일 포맷 검사
 
 ### CI/CD 상태
-![Python CI/CD](https://github.com/{OWNER}/{REPO}/actions/workflows/python-ci.yml/badge.svg)
+![Python CI/CD](https://github.com/your-username/your-repo-name/actions/workflows/python-ci.yml/badge.svg)
