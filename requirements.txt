@@ -1,0 +1,57 @@
+# Core LangChain
+langchain>=0.1.14
+langchain-core>=0.1.43
+langchain-community>=0.0.26
+langchain-openai>=0.1.1
+langchain-huggingface>=0.0.1
+langchain-chroma>=0.0.1
+langchain-text-splitters>=0.0.1
+
+# Embeddings
+openai>=1.14.3
+huggingface-hub>=0.21.4
+sentence-transformers>=2.5.1
+
+# Vector Stores
+chromadb>=0.4.24
+faiss-cpu>=1.8.0  # optional: for faiss usage
+
+# Document Loaders
+pypdf>=3.17.4
+beautifulsoup4>=4.12.3
+html2text>=2020.1.16
+unstructured>=0.12.5
+lxml>=5.1.0
+
+# Text Processing
+tiktoken>=0.6.0
+nltk>=3.8.1
+markdown>=3.6
+
+# SQL / DB
+sqlalchemy>=2.0.30
+sqlite-utils>=3.36
+duckdb>=0.10.0
+
+# LangSmith (Experiment Tracking & Evaluation)
+langsmith>=0.1.12
+
+# Evaluation & Output Parsing
+pandas>=2.2.2
+scikit-learn>=1.4.2
+jsonschema>=4.21.1
+
+# Optional LLMs (LLaMA3 등)
+transformers>=4.40.2
+accelerate>=0.28.0
+torch>=2.2.2
+
+# Environment & Dev Tools
+python-dotenv>=1.0.1
+tqdm>=4.66.2
+ipykernel>=6.29.4
+jupyterlab>=4.1.8
+ipywidgets>=8.1.2
+
+# Testing (for test cases)
+pytest>=8.1.1
