@@ -53,4 +53,4 @@ jobs:
             pip install safety
             safety check
       run: |
-        pip list --outdated
+        pip list --outdated --format=json | python -c "import sys, json; data=json.load(sys.stdin); sys.exit(1) if data else sys.exit(0)"
