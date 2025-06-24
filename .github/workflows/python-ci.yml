@@ -49,6 +49,8 @@ jobs:
             --ignore=notebooks/lecture
         fi
 
-    - name: Check dependencies
+            pip list --outdated
+            pip install safety
+            safety check
       run: |
         pip list --outdated
