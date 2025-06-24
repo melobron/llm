@@ -42,10 +42,12 @@ jobs:
 
     - name: Test Notebooks
       run: |
-        pytest --nbval notebooks/ \
-          --ignore=notebooks/data \
-          --ignore=notebooks/vector_db \
-          --ignore=notebooks/lecture
+        if [ -d "notebooks" ]; then
+          pytest --nbval notebooks/ \
+            --ignore=notebooks/data \
+            --ignore=notebooks/vector_db \
+            --ignore=notebooks/lecture
+        fi
 
     - name: Check dependencies
       run: |
