@@ -55,3 +55,11 @@ ipywidgets>=8.1.2
 
 # Testing (for test cases)
 pytest>=8.1.1
+
+# Development & CI/CD Tools
+pre-commit>=3.5.0
+black>=23.3.0
+flake8>=6.0.0
+flake8-docstrings>=1.7.0
+isort>=5.12.0
+nbval>=0.10.0
